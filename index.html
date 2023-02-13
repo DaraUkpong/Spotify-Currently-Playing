@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPotify Now playing Api test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/c23fb0a617.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+
+
+
+</head>
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+</style>
+
+<body>
+    <audio><source src="" id="previewSound" type="audio/mp3">></audio> </audio>
+    <div class="w-[100%] h-screen relative bg-gradient-to-b from-green-700 to-black flex flex-col justify-center items-center audio-container">
+        <span class="text-white font-bold sm:text-lg lg:text-4xl mb-8">Dara is currently blasting his eardrums to..</span>
+        <div class="flex flex-col bg-black h-[65vh] w-[20rem] rounded-lg justify-center items-center">
+            <div><img src="" alt="" id="album-art" class=" rounded-lg w-[16rem]"></div>
+            <span id="songName" class="text-white font-bold text-xl mt-8"></span>
+            <span id="artist" class="text-white font-thin text-md"></span>
+            <div class="w-12 h-12 rounded-full bg-green-700 mt-7 flex justify-center items-center" onclick="playPrev">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zM188.3 147.1c-7.6 4.2-12.3 12.3-12.3 20.9V344c0 8.7 4.7 16.7 12.3 20.9s16.8 4.1 24.3-.5l144-88c7.1-4.4 11.5-12.1 11.5-20.5s-4.4-16.1-11.5-20.5l-144-88c-7.4-4.5-16.7-4.7-24.3-.5z"/></svg>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
