@@ -15,8 +15,7 @@ window.onload = main();
 async function refreshAccessToken() {
 const clientId = '0c56e4fe042e4c519643c4247d4efc73';
 const clientSecret = 'e4a61c2de48542e8ab7d90b930993471';
-const refreshToken = 'AQDF9nJ48VgScnX_Nv4dbRCFtd9qj4rYliZcltXRoToqE41kO10TqK3YshCmidgTNNds6Sd1RqUgdHcIglpGx-pbC2idvHil0cN3vQzUfm6jjhTzBv6xQ-Tlsnqc-Q2X1dzQetBABKsyFoQrjrgsxVwpxdhrT9EtkVgQgKpUiZh6Gr1ME4nQOjBaHGpIba6D-AnwO5z18AmPD1N7FefB_LnHVgohr7kXCL1L';
-
+const refreshToken = 'AQAFmIEsx4hjVEVPb48omsMO__-R0zwUkPLj8gdBDhCdtDGspJeeDIA1DCKKHPoYrn4OmM4z_LSwED6h1g9zTliGMDg2HySbnvuZ0tBHqDl1RwcOb2mAXqCZ6CrWCbedlyA'
 
     const credentials = btoa(clientId + ':' + clientSecret)
     const response = await fetch('https://accounts.spotify.com/api/token', {
