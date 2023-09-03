@@ -13,7 +13,7 @@ function getNowPlaying() {
             headers: {
                 'Accept': 'application/json',
                 'Content-Type': 'application/json',
-                'Authorization': ' Bearer BQAZHH7E2PNwSgUy2teB2PLQ0WM5bJ8wV4nxyA72-ui3QQKb5LTCSxRZlkIpjoRimgx8_masB3eQ-SjbzWPSUvICKPkwO3CBH2HnzTC5q1DAx6KmXed9npxyiPcYf0ZkoNcWJAncDN8HURzFPUIlf70-QsOudsaeeD_PMZFWUE0SH6KY1zL7mjUJpBLcrdlGnfEoB51GIQ'
+                'Authorization': ' Bearer e4a61c2de48542e8ab7d90b930993471eD_PMZFWUE0SH6KY1zL7mjUJpBLcrdlGnfEoB51GIQ'
             }
         })
         .then((res) => res.json())
