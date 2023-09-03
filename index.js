@@ -18,12 +18,11 @@ const clientSecret = 'e4a61c2de48542e8ab7d90b930993471';
 const refreshToken = 'AQDF9nJ48VgScnX_Nv4dbRCFtd9qj4rYliZcltXRoToqE41kO10TqK3YshCmidgTNNds6Sd1RqUgdHcIglpGx-pbC2idvHil0cN3vQzUfm6jjhTzBv6xQ-Tlsnqc-Q2X1dzQetBABKsyFoQrjrgsxVwpxdhrT9EtkVgQgKpUiZh6Gr1ME4nQOjBaHGpIba6D-AnwO5z18AmPD1N7FefB_LnHVgohr7kXCL1L';
 
 
-    const credentials = `btoa(${clientId} + ':' + ${clientSecret})`;
     
     const response = await fetch('https://accounts.spotify.com/api/token', {
       method: 'POST',
       headers: {
-        'Authorization': `Basic ${credentials}`,
+        'Authorization': 'Basic ' + btoa(clientId + ':' + clientSecret),
         'Content-Type': 'application/x-www-form-urlencoded'
       },
       body: `grant_type=refresh_token&refresh_token=${refreshToken}`
